@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+i {
+  pointer-events: none;
+}
+body {
+  background-color: #243447;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    h1 {
+      color: white;
+    }
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input,
+    button {
+      padding: 0.75rem 1rem;
+      border: none;
+      font-size: 1.75rem;
+      margin: 0.5rem;
+    }
+    input[type="text"] {
+      width: 30vw;
+    }
+    input[type="number"] {
+      width: 5rem;
+      text-align: center;
+    }
+    input.year {
+      width: 7rem;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+    button {
+      background-color: #0abab5;
+      color: black;
+      border-radius: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div.todo {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleUp 0.5s forwards;
+    transition: all 0.5s ease-in;
+    p.todo-text {
+      width: 30vw;
+    }
+    p.todo-date {
+      width: 10vw;
+    }
+    p.todo-time {
+      width: 8vw;
+      text-align: center;
+    }
+    p {
+      background-color: white;
+      color: black;
+      padding: 0.75rem 1rem;
+      border: none;
+      font-size: 1.75rem;
+      margin: 0.5rem;
+    }
+    button {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2.25rem;
+      border-radius: 50%;
+    }
+    button.check-button {
+      color: white;
+      background-color: chartreuse;
+    }
+    button.trash-button {
+      color: white;
+      background-color: red;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+div.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.5rem;
+  text-decoration-color: red;
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+div.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #0abab5;
+    color: black;
+    padding: 0.75rem 1rem;
+    border: none;
+    font-size: 1.75rem;
+    margin: 0.5rem;
+  }
+}

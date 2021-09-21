@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background-color: #243447;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+}
+
+body header h1 {
+  color: white;
+}
+
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+body form input,
+body form button {
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1.75rem;
+  margin: 0.5rem;
+}
+
+body form input[type="text"] {
+  width: 30vw;
+}
+
+body form input[type="number"] {
+  width: 5rem;
+  text-align: center;
+}
+
+body form input.year {
+  width: 7rem;
+}
+
+body form input::-webkit-outer-spin-button,
+body form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body form button {
+  background-color: #0abab5;
+  color: black;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div.todo {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: scaleUp 0.5s forwards;
+          animation: scaleUp 0.5s forwards;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+section div.todo p.todo-text {
+  width: 30vw;
+}
+
+section div.todo p.todo-date {
+  width: 10vw;
+}
+
+section div.todo p.todo-time {
+  width: 8vw;
+  text-align: center;
+}
+
+section div.todo p {
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1.75rem;
+  margin: 0.5rem;
+}
+
+section div.todo button {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.25rem;
+  border-radius: 50%;
+}
+
+section div.todo button.check-button {
+  color: white;
+  background-color: chartreuse;
+}
+
+section div.todo button.trash-button {
+  color: white;
+  background-color: red;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+div.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.5rem;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.sort button {
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color: #0abab5;
+  color: black;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1.75rem;
+  margin: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */
